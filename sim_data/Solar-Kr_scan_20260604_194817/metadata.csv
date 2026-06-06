@@ -1,0 +1,25 @@
+param,value,unit
+Er_window_i,0.5,keV
+Er_window_f,10.0,keV
+Rs1,26.02215141419397,1 / (t yr)
+Ad1,0.03342,dimensionless
+Phase1_rad,0.051607271516875455,rad
+t01,3.0,d
+Rs2,12.601745401000061,1 / (t yr)
+Rb,6.815000384168018,1 / (t yr)
+D,100.0,t
+T,10.0,yr
+dt,30.0,d
+P,365.25,d
+N1_in_bin,213.73430319666508,counts in bin [#]
+N2_in_bin,103.50509569609906,counts in bin [#]
+Nb_in_bin,55.975362498299944,counts in bin [#]
+n_toys,1000,
+noise_type,poisson,
+seed,42,
+significance,0.1,
+snr_threshold,2.0,
+bias_tolerance,0.1,
+signal1 components,"pp, Be7_384, Be7_861, pep, N13, O15, F17",
+signal2 components,Kr85,
+bkgd components,"Rn222, nubb",

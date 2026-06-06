@@ -1,0 +1,17 @@
+param,value,unit
+Rs1,20.0,1 / (t yr)
+Ad1,0.03342,dimensionless
+Phase1_rad,0.051607271516875455,rad
+Rb,0.0,1 / (t yr)
+D,10.0,t
+T,10.0,yr
+dt,30.0,d
+P,365.25,d
+N1_in_bin,16.427104722792606,counts in bin [#]
+N2_in_bin,16.427104722792606,counts in bin [#]
+n_toys,1000,
+noise_type,poisson,
+seed,42,
+significance,0.1,
+snr_threshold,2.0,
+bias_tolerance,0.1,
