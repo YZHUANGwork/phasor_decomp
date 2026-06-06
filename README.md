@@ -1,10 +1,9 @@
 # phasor_decomp
-General analysis of periodic signals 1yr sharing the same frequency but differing in amplitude and phase, with application to potential annual modulation analysis in Xenon experiments.
+General analysis of periodic signals (1yr) sharing the same frequency but differing in amplitude and phase, with application to potential annual modulation analysis in Xenon experiments. (mentioned in [6.2.3](https://oaktrust.library.tamu.edu/items/e405a6b7-c1ec-4c33-89f4-2a4fc823e1e4))
 
-Solar neutrino: due to earth orbiting, measured amplitude and phase
-WIMP annual modulation: due to earth orbiting, unknown, standard halo model and upperlimit of xsec
-Kr85: background in Xenon electron recoil, measured decay rate has ~ 1y, detail unknown, amplitude phase are ancient. 
-Source: periodic decay rate source:
+- **Solar neutrino**: due to earth orbiting, measured amplitude and phase
+- **WIMP**:  annual modulation, due to earth orbiting, unknown, model dependent, standard halo model and upperlimit of xsec
+- **Kr85**: background in Xenon electron recoil, measured decay rate has ~ 1y, detail unknown, amplitude phase are ancient. Source: periodic decay rate source:
 [Ambient humidity, the overlooked influencer of radioactivity measurements](https://iopscience.iop.org/article/10.1088/1681-7575/ad0c9f),
 [Analysis of Beta-Decay Rates for Ag108, Ba133, Eu152, Eu154, Kr85, Ra226 And Sr90, Measured at the Physikalisch-Technische Bundesanstalt from 1990 to 1996](https://arxiv.org/abs/1408.3090),
 [Half-life measurements of long-lived radionuclides—New data analysis and systematic effects](https://www.sciencedirect.com/science/article/abs/pii/S0969804309007222)
