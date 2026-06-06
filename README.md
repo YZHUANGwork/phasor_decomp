@@ -46,7 +46,7 @@ mod      = Ad * N_in_bin    [counts]
 
 **Scanned case:** Select `R1`; scan a range of `mod2`, where `mod2 = Ad2 × N2_in_bin`. Use `Ad2 / Ad1` to control `mod2`, with `N2_in_bin = N1_in_bin`.
 
-![FIG](figures/scan_20260605_183927.pdf)
+![FIG](figures/scan_20260605_183927.png)
 
 ## Modulation Count
 
@@ -63,10 +63,10 @@ $$A_d \int_{E_{\min}}^{E_{\max}} \frac{dN(E_r)}{dE_r}\ dE_r \times D \times dt$$
 ## Applications
 
 **Electron recoil channel** — Kr and Solar $\nu$:
-![FIG](figures/Solar-Kr_scan_20260604_194817_combined.pdf)
+![FIG](figures/Solar-Kr_scan_20260604_194817_combined.png)
 
 **Nuclear recoil channel** — Solar $^8$B $\nu$ and WIMP SHM:
 
-![FIG](figures/Solar-WIMP_pp_Be7_384_Be7_861_pep_N13_O15_F17_8B_hep_multiEr_combined.pdf)
+![FIG](figures/Solar-WIMP_pp_Be7_384_Be7_861_pep_N13_O15_F17_8B_hep_multiEr_combined.png)
 
-current issue: 
+current issue: for larger dt~30 days, signal 1 only, noiseless, bias can be non trivial. 
