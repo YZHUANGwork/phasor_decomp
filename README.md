@@ -41,11 +41,11 @@ choose an Er window
 
 **WIMP SHM modulation counts:**
 
-$$\int_{E_{\min}}^{E_{\max}} A_d(E_r)\*\frac{dN(E_r)}{dE_r}\ dE_r \times D \times dt$$
+$$\int_{E_{\min}}^{E_{\max}} A_d(E_r)\*\frac{dR(E_r)}{dE_r}\ dE_r \times D \times dt$$
 
 **Kr and Solar $\nu$ modulation counts:**
 
-$$A_d \int_{E_{\min}}^{E_{\max}} \frac{dN(E_r)}{dE_r}\ dE_r \times D \times dt$$
+$$A_d \int_{E_{\min}}^{E_{\max}} \frac{dR(E_r)}{dE_r}\ dE_r \times D \times dt$$
 
 ## Applications
 
