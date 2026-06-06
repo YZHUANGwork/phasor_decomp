@@ -6,7 +6,6 @@ Single-case toy runner study.
 """
 
 import sys
-sys.path.insert(0, '/WIMP_decomp')
 
 import numpy as np
 import astropy.units as u
