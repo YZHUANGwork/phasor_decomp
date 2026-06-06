@@ -92,6 +92,9 @@ phasor_decomp/
 │   # application: nuclear recoil (Solar 8B .... ν + WIMP)
 ├── sim_scanned_toyrunner_Solar-WIMP.py   ← simulate Solar ν vs WIMP scan
 └── plot_scanned_toyrunner_Solar-WIMP.py  ← plot Solar ν vs WIMP results
+```
+
+---
 
 ## Related repositories
 
@@ -102,7 +105,7 @@ This repository expects the following sibling directories:
 ├── neutrino_spectrum/      ← https://github.com/YZHUANGwork/neutrino_spectrum 
 ├── wimp_spectrum/          ← https://github.com/YZHUANGwork/wimp_spectrum
 └── detector_efficiency/    ← https://github.com/YZHUANGwork/detector_efficiency
-└── phasor-decomp/            ← this repo
+└── phasor-decomp/          ← this repo
 ```
 
 current issue: for larger dt~30 days, signal 1 only, noiseless, bias can be non trivial. 
