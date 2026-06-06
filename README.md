@@ -9,18 +9,6 @@ General analysis of periodic signals (1yr) sharing the same frequency but differ
 [Half-life measurements of long-lived radionuclides—New data analysis and systematic effects](https://www.sciencedirect.com/science/article/abs/pii/S0969804309007222)
 
 
-
-## Related repositories
-
-This repository expects the following sibling directories:
-
-```
-~/projects/
-├── neutrino_spectrum/      ← https://github.com/YZHUANGwork/neutrino_spectrum 
-├── wimp_spectrum/          ← https://github.com/YZHUANGwork/wimp_spectrum
-└── detector_efficiency/    ← https://github.com/YZHUANGwork/detector_efficiency
-└── phasor-decomp/            ← this repo
-```
 ## 4 Questions
 
 - **Q1:** Can signal 2 be extracted out?
@@ -67,5 +55,54 @@ $$A_d \int_{E_{\min}}^{E_{\max}} \frac{dN(E_r)}{dE_r}\ dE_r \times D \times dt$$
 **Nuclear recoil channel** — Solar $^8$B $\nu$ and WIMP SHM:
 
 ![FIG](figures/Solar-WIMP_pp_Be7_384_Be7_861_pep_N13_O15_F17_8B_hep_multiEr_combined.png)
+
+---
+
+## Repository structure
+
+```
+phasor_decomp/
+│
+├── figures/                              ← output plots
+├── sim_data/                             ← simulation output data
+│
+│   # core decomposition
+├── decomp_calc.py                        ← phasor decomposition math
+├── run_decomp.py                         ← entry point for decomposition
+├── toy_runner.py                         ← toy MC runner
+├── convert_params.py                     ← parameter conversion utilities
+│
+│   # spectrum inputs
+├── get_realistic_spectrum.py             ← realistic signal spectrum (smear + efficiency)
+├── get_sumraw_spectrum.py                ← raw summed spectrum
+├── get_wimp_Erwindow.py                  ← WIMP energy window selection
+│
+│   # single-case toy runner
+├── sim_toyrunner_singlecase.py           ← simulate single case
+├── plot_toyrunner_singlecase.py          ← plot single case results
+│
+│   # scanned toy runner
+├── sim_scanned_toyrunners.py             ← simulate scanned cases
+├── plot_scanned_toyrunner.py             ← plot scanned results
+│
+│   # application: electron recoil (Solar ν + Kr85)
+├── sim_scanned_toyrunner_Solar-Kr.py     ← simulate Solar ν vs Kr scan
+├── plot_scanned_toyrunner_Solar-Kr.py    ← plot Solar ν vs Kr results
+│
+│   # application: nuclear recoil (Solar 8B .... ν + WIMP)
+├── sim_scanned_toyrunner_Solar-WIMP.py   ← simulate Solar ν vs WIMP scan
+└── plot_scanned_toyrunner_Solar-WIMP.py  ← plot Solar ν vs WIMP results
+
+## Related repositories
+
+This repository expects the following sibling directories:
+
+```
+~/projects/
+├── neutrino_spectrum/      ← https://github.com/YZHUANGwork/neutrino_spectrum 
+├── wimp_spectrum/          ← https://github.com/YZHUANGwork/wimp_spectrum
+└── detector_efficiency/    ← https://github.com/YZHUANGwork/detector_efficiency
+└── phasor-decomp/            ← this repo
+```
 
 current issue: for larger dt~30 days, signal 1 only, noiseless, bias can be non trivial. 
