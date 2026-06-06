@@ -2,7 +2,7 @@
 General analysis of periodic signals 1yr sharing the same frequency but differing in amplitude and phase, with application to potential annual modulation analysis in Xenon experiments.
 
 Solar neutrino: due to earth orbiting, measured amplitude and phase
-WIMP annual modulation: due to earth orbiting, ghost
+WIMP annual modulation: due to earth orbiting, unknown, standard halo model and upperlimit of xsec
 Kr85: background in Xenon electron recoil, measured decay rate has ~ 1y, detail unknown, amplitude phase are ancient. 
 Source: periodic decay rate source:
 [Ambient humidity, the overlooked influencer of radioactivity measurements](https://iopscience.iop.org/article/10.1088/1681-7575/ad0c9f),
@@ -36,13 +36,13 @@ use T=10 yr, P = 365.25 days
 **Signal model:**
 
 ```
-N_in_bin = R × dt × D       [counts]
-mod      = Ad × N_in_bin    [counts]
+N_in_bin = R * dt ×* D       [counts]
+mod      = Ad * N_in_bin    [counts]
 ```
 
 **Single-run case:** Select `R1`, `R2`, `Ad2`.
 
-![FIG](figures/toyrunner_singlecae.png)
+![FIG](figures/toyrunner_singlecase.png)
 
 **Scanned case:** Select `R1`; scan a range of `mod2`, where `mod2 = Ad2 × N2_in_bin`. Use `Ad2 / Ad1` to control `mod2`, with `N2_in_bin = N1_in_bin`.
 
@@ -54,11 +54,11 @@ choose an Er window
 
 **WIMP SHM modulation counts:**
 
-$$\int_{E_{\min}}^{E_{\max}} A_d(E_r)\, \frac{dN(E_r)}{dE_r}\, dE_r \times D \times dt$$
+$$\int_{E_{\min}}^{E_{\max}} A_d(E_r)\*\frac{dN(E_r)}{dE_r}\ dE_r \times D \times dt$$
 
 **Kr and Solar $\nu$ modulation counts:**
 
-$$A_d \int_{E_{\min}}^{E_{\max}} \frac{dN(E_r)}{dE_r}\, dE_r \times D \times dt$$
+$$A_d \int_{E_{\min}}^{E_{\max}} \frac{dN(E_r)}{dE_r}\ dE_r \times D \times dt$$
 
 ## Applications
 
